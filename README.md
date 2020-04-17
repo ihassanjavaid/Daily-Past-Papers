@@ -1,6 +1,6 @@
-# dailypastpapers
+# Daily Past Papers
 
-A new Flutter application.
+A webview app
 
 ## Getting Started
 
