@@ -47,6 +47,10 @@ class _MainScreenState extends State<MainScreen> {
                 'Home',
                 style: kSideBarNormal,
               ),
+              onTap: () {
+                Navigator.pop(context);
+                _webViewController.loadUrl('https://www.dailypastpapers.xyz/');
+              },
             ),
             ksideBarDiv,
             ListTile(
