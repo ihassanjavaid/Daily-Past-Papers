@@ -29,6 +29,6 @@ const kSideHeaderSubText = TextStyle(
 
 const kAppBarText = TextStyle(
 color: Colors.white,
-fontSize: 28,
+fontSize: 24,
 fontWeight: FontWeight.w400,
 );
