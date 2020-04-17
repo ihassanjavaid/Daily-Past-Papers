@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dailypastpapers/components/constants.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -40,6 +41,38 @@ class _MainScreenState extends State<MainScreen> {
                 'Home'
               ),
             ),
+            ksideBarDiv,
+            ListTile(
+              title: Text(
+                  'Papers',
+                style: kSideBarHeading,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Matric',
+                style: kSideBarPapers,
+              )
+            ),
+            ListTile(
+                title: Text(
+                  'F.A/F.Sc.',
+                  style: kSideBarPapers,
+                )
+            ),
+            ListTile(
+                title: Text(
+                  'Bachelors',
+                  style: kSideBarPapers,
+                )
+            ),
+            ListTile(
+                title: Text(
+                  'MS IT',
+                  style: kSideBarPapers,
+                )
+            ),
+            ksideBarDiv,
             ListTile(
               title: Text(
                   'Terms & Conditions'
