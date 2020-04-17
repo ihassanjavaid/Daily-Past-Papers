@@ -9,7 +9,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final Completer<WebViewController> _controller = Completer<WebViewController>();
+  final Completer<WebViewController> _controller =
+      Completer<WebViewController>();
 
   @override
   Widget build(BuildContext context) {
@@ -88,11 +89,11 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Center(
         child: WebView(
-            initialUrl: "https://google.com",
+          initialUrl: 'https://www.google.com/',
           onWebViewCreated: (WebViewController webViewController) {
-              _controller.complete(webViewController);
+            _controller.complete(webViewController);
           },
-          ),
+        ),
       ),
     );
   }
