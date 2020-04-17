@@ -17,3 +17,9 @@ const kSideBarPapers = TextStyle(
 const kSideHeader = TextStyle(
   fontSize: 22,
 );
+
+const kAppBarText = TextStyle(
+color: Colors.white,
+fontSize: 28,
+fontWeight: FontWeight.w400,
+);

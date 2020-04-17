@@ -21,11 +21,7 @@ class _MainScreenState extends State<MainScreen> {
           'Daily Past Papers',
           overflow: TextOverflow.clip,
           maxLines: 1,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 28,
-            fontWeight: FontWeight.w400,
-          ),
+          style: kAppBarText,
         ),
         centerTitle: true,
       ),
