@@ -16,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey,
         title: Text(
           'Daily Past Papers',
           overflow: TextOverflow.clip,
@@ -76,6 +76,9 @@ class _MainScreenState extends State<MainScreen> {
                 'Terms & Conditions',
                 style: kSideBarNormal,
               ),
+              onTap: () {
+                // TODO
+              },
             ),
             ListTile(
               title: Text(
