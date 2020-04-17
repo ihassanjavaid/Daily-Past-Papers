@@ -7,7 +7,11 @@ const ksideBarDiv = Divider(
 
 const kSideBarHeading = TextStyle(
   fontSize: 18,
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.w900,
+);
+
+const kSideBarNormal = TextStyle(
+  fontSize: 18,
 );
 
 const kSideBarPapers = TextStyle(
@@ -16,6 +20,11 @@ const kSideBarPapers = TextStyle(
 
 const kSideHeader = TextStyle(
   fontSize: 22,
+  fontWeight: FontWeight.w200
+);
+
+const kSideHeaderSubText = TextStyle(
+    fontWeight: FontWeight.w200
 );
 
 const kAppBarText = TextStyle(

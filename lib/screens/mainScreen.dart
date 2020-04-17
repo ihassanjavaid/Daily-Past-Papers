@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
           children: <Widget>[
             UserAccountsDrawerHeader(
               accountName: Text('Daily Past Papers', style: kSideHeader),
-              accountEmail: Text('By Saif'),
+              accountEmail: Text('By Saif', style: kSideHeaderSubText),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.grey,
                 backgroundImage: NetworkImage(
@@ -38,7 +38,10 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
-              title: Text('Home'),
+              title: Text(
+                'Home',
+                style: kSideBarNormal,
+              ),
             ),
             ksideBarDiv,
             ListTile(
@@ -69,16 +72,28 @@ class _MainScreenState extends State<MainScreen> {
             )),
             ksideBarDiv,
             ListTile(
-              title: Text('Terms & Conditions'),
+              title: Text(
+                'Terms & Conditions',
+                style: kSideBarNormal,
+              ),
             ),
             ListTile(
-              title: Text('Privacy Policy'),
+              title: Text(
+                'Privacy Policy',
+                style: kSideBarNormal,
+              ),
             ),
             ListTile(
-              title: Text('About Us'),
+              title: Text(
+                'About Us',
+                style: kSideBarNormal,
+              ),
             ),
             ListTile(
-              title: Text('Contact Us'),
+              title: Text(
+                'Contact Us',
+                style: kSideBarNormal,
+              ),
             ),
           ],
         ),
