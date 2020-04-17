@@ -100,7 +100,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Center(
         child: WebView(
-          initialUrl: 'https://www.google.com/',
+          initialUrl: 'https://www.dailypastpapers.xyz/',
           onWebViewCreated: (WebViewController webViewController) {
             _controller.complete(webViewController);
           },
