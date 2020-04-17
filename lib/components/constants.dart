@@ -13,3 +13,7 @@ const kSideBarHeading = TextStyle(
 const kSideBarPapers = TextStyle(
   fontStyle: FontStyle.italic,
 );
+
+const kSideHeader = TextStyle(
+  fontSize: 22,
+);

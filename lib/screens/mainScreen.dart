@@ -28,70 +28,56 @@ class _MainScreenState extends State<MainScreen> {
         child: ListView(
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("Daily Past Papers"),
+              accountName: Text('Daily Past Papers', style: kSideHeader),
               accountEmail: Text('By Saif'),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.grey,
-                backgroundImage: NetworkImage('https://png.pngtree.com/element_our/20190528/ourmid/pngtree-paper-icon-image_1131168.jpg'
-                ),
+                backgroundImage: NetworkImage(
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT41KuC6cpqTR5hUyO_qjNn0Ph7w73DFc8agiNslBMfDrhiQbNA&usqp=CAU'),
               ),
             ),
             ListTile(
-              title: Text(
-                'Home'
-              ),
+              title: Text('Home'),
             ),
             ksideBarDiv,
             ListTile(
               title: Text(
-                  'Papers',
+                'Papers',
                 style: kSideBarHeading,
               ),
             ),
             ListTile(
-              title: Text(
-                'Matric',
-                style: kSideBarPapers,
-              )
-            ),
+                title: Text(
+              'Matric',
+              style: kSideBarPapers,
+            )),
             ListTile(
                 title: Text(
-                  'F.A/F.Sc.',
-                  style: kSideBarPapers,
-                )
-            ),
+              'F.A/F.Sc.',
+              style: kSideBarPapers,
+            )),
             ListTile(
                 title: Text(
-                  'Bachelors',
-                  style: kSideBarPapers,
-                )
-            ),
+              'Bachelors',
+              style: kSideBarPapers,
+            )),
             ListTile(
                 title: Text(
-                  'MS IT',
-                  style: kSideBarPapers,
-                )
-            ),
+              'MS IT',
+              style: kSideBarPapers,
+            )),
             ksideBarDiv,
             ListTile(
-              title: Text(
-                  'Terms & Conditions'
-              ),
+              title: Text('Terms & Conditions'),
             ),
             ListTile(
-              title: Text(
-                  'Privacy Policy'
-              ),
+              title: Text('Privacy Policy'),
             ),
             ListTile(
-              title: Text(
-                  'About Us'
-              ),
+              title: Text('About Us'),
             ),
             ListTile(
-              title: Text(
-                  'Contact Us'
-              ),
+              title: Text('Contact Us'),
             ),
           ],
         ),
