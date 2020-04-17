@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dailypastpapers/components/constants.dart';
+import 'package:dailypastpapers/utilities/constants.dart';
 
 class MainScreen extends StatefulWidget {
   @override
