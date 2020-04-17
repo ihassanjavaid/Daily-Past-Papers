@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dailypastpapers/utilities/constants.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+import 'dart:async';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -7,6 +9,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  final Completer<WebViewController> _controller = Completer<WebViewController>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,8 +86,14 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
       ),
-      /*body: Center(
-      ),*/
+      body: Center(
+        child: WebView(
+            initialUrl: "https://google.com",
+          onWebViewCreated: (WebViewController webViewController) {
+              _controller.complete(webViewController);
+          },
+          ),
+      ),
     );
   }
 }
