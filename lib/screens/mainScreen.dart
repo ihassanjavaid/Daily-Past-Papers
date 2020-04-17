@@ -12,6 +12,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final Completer<WebViewController> _controller =
       Completer<WebViewController>();
+  WebViewController _webViewController;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +82,8 @@ class _MainScreenState extends State<MainScreen> {
                 style: kSideBarNormal,
               ),
               onTap: () {
-                // TODO
+                Navigator.pop(context);
+                _webViewController.loadUrl('https://www.dailypastpapers.xyz/p/terms-conditions.html');
               },
             ),
             ListTile(
@@ -89,18 +91,30 @@ class _MainScreenState extends State<MainScreen> {
                 'Privacy Policy',
                 style: kSideBarNormal,
               ),
+              onTap: () {
+                Navigator.pop(context);
+                _webViewController.loadUrl('https://www.dailypastpapers.xyz/p/privacy-policy.html');
+              },
             ),
             ListTile(
               title: Text(
                 'About Us',
                 style: kSideBarNormal,
               ),
+              onTap: () {
+                Navigator.pop(context);
+                _webViewController.loadUrl('https://www.dailypastpapers.xyz/p/about-us.html');
+              },
             ),
             ListTile(
               title: Text(
                 'Contact Us',
                 style: kSideBarNormal,
               ),
+              onTap: () {
+                Navigator.pop(context);
+                _webViewController.loadUrl('https://www.dailypastpapers.xyz/p/contact-us.html');
+              },
             ),
           ],
         ),
@@ -109,6 +123,7 @@ class _MainScreenState extends State<MainScreen> {
         child: WebView(
           initialUrl: 'https://www.dailypastpapers.xyz/',
           onWebViewCreated: (WebViewController webViewController) {
+            this._webViewController = webViewController;
             _controller.complete(webViewController);
           },
         ),
